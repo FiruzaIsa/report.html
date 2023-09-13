@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CVE Portal - Result</title>
+</head>
+<body>
+    <h1>CVE Information Portal - Result</h1>
+    {% if cve_id %}
+    <p>CVE ID: {{ cve_id }}</p>
+    <p>Description: {{ cve_description }}</p>
+    {% elif error_message %}
+    <p>{{ error_message }}</p>
+    {% endif %}
+    <a href="/">Go back to the home page</a>
+</body>
+</html>
